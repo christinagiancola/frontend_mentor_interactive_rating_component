@@ -1,3 +1,68 @@
 * {
-	outline: 1px solid red;
+	/* outline: 1px solid orange; */
+}
+
+body {
+	background-color: hsl(216, 12%, 8%);
+	font-family: 'Overpass', sans-serif;
+}
+
+h1 {
+	font-size: 28px;
+	font-weight: 400;
+	color: hsl(0, 0%, 100%, 90%);
+}
+
+p {
+	font-size: 15px;
+	font-weight: 400;
+	color: hsl(217, 12%, 63%, 75%);
+}
+
+button {
+	border: hsl(216, 12%, 8%);
+	color: hsl(217, 12%, 63%, 75%);
+}
+
+.main {
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.card-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	padding: 32px;
+	width: 411px;
+	height: 415px;
+	border-radius: 32px;
+	background: linear-gradient(136.75deg, #1e252f 19.14%, #171e28 86.32%);
+}
+
+.button-row {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+
+.circle {
+	height: 48px;
+	width: 48px;
+	background-color: hsl(216, 12%, 54%, 25%);
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.submit {
+	width: 341px;
+	height: 45px;
+	border-radius: 22px;
+	text-transform: uppercase;
+	color: hsl(0, 0%, 100%, 90%);
+	background-color: hsla(27, 98%, 52%, 1);
 }
