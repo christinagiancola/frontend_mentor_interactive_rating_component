@@ -24,7 +24,7 @@
 	<body>
 		<main class="main">
 			<div class="card-container">
-					<div class="circle">
+					<div class="circle default">
 						<svg width="17" height="16" xmlns="http://www.w3.org/2000/svg">
 							<path
 								d="m9.067.43 1.99 4.031c.112.228.33.386.58.422l4.45.647a.772.772 0 0 1 .427 1.316l-3.22 3.138a.773.773 0 0 0-.222.683l.76 4.431a.772.772 0 0 1-1.12.813l-3.98-2.092a.773.773 0 0 0-.718 0l-3.98 2.092a.772.772 0 0 1-1.119-.813l.76-4.431a.77.77 0 0 0-.222-.683L.233 6.846A.772.772 0 0 1 .661 5.53l4.449-.647a.772.772 0 0 0 .58-.422L7.68.43a.774.774 0 0 1 1.387 0Z"
@@ -40,11 +40,11 @@
             </p>
           </div>
           <div class="button-row">
-						<button type="button" class="circle">1</button>
-            <button type="button" class="circle">2</button>
-            <button type="button" class="circle">3</button>
-            <button type="button" class="circle">4</button>
-            <button type="button" class="circle">5</button>
+						<button type="radio" id="rating1" class="circle rating-btn default">1</button>
+            <button type="radio" id="rating2" class="circle rating-btn default">2</button>
+            <button type="radio" id="rating3" class="circle rating-btn default">3</button>
+            <button type="radio" id="rating4" class="circle rating-btn default">4</button>
+            <button type="radio" id="rating5" class="circle rating-btn default">5</button>
           </div>
           <button type="button" class="submit">Submit</button>
 				</div>
@@ -65,4 +65,5 @@
 
 		<!-- Thank you state end -->
 	</body>
+  <script src="./index.js"></script>
 </html>
