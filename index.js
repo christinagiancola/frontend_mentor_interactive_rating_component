@@ -1,8 +1,9 @@
 const ratings = document.querySelectorAll('.rating-btn');
+const submitBtn = document.querySelectorAll('.submit-btn');
 
 const ratingClickHandler = (e) => {
-	resetRatingBtns();
-	setActiveRatingBtn(e);
+	resetBtns();
+	setActiveBtn(e);
 };
 
 for (let i = 0; i < ratings.length; i++) {
@@ -10,7 +11,7 @@ for (let i = 0; i < ratings.length; i++) {
 	rating.addEventListener('click', ratingClickHandler);
 }
 
-const resetRatingBtns = () => {
+const resetBtns = () => {
 	for (let i = 0; i < ratings.length; i++) {
 		const rating = ratings[i];
 		rating.classList.remove('active');
@@ -18,7 +19,14 @@ const resetRatingBtns = () => {
 	}
 };
 
-const setActiveRatingBtn = (e) => {
+const setActiveBtn = (e) => {
 	e.target.classList.remove('default');
 	e.target.classList.add('active');
 };
+
+const submitClickHandler = () => {
+	//get rating of
+	console.log('submit btn clicked!');
+};
+
+submitBtn[0].addEventListener('click', submitClickHandler);

@@ -9,7 +9,7 @@ body {
 
 h1 {
 	font-size: 28px;
-	font-weight: 400;
+	font-weight: 700;
 	color: hsl(0, 0%, 100%, 90%);
 }
 
@@ -64,7 +64,7 @@ button {
 
 .default {
 	color: hsl(0, 0%, 100%, 90%);
-	background-color: hsl(216, 12%, 54%, 25%);
+	background-color: #262f38;
 }
 
 .active {
@@ -72,13 +72,28 @@ button {
 	background-color: hsl(217, 12%, 63%);
 }
 
-.submit {
+.submit-btn {
 	width: 341px;
 	height: 45px;
 	border-radius: 22px;
 	text-transform: uppercase;
 	color: hsl(0, 0%, 100%, 90%);
 	background-color: hsla(27, 98%, 52%, 1);
+}
+
+.rounded-div {
+	width: 200px;
+	height: 30px;
+	border-radius: 22px;
+	background-color: #262f38;
+	display: flex;
+	justify-content: center;
+}
+
+.rounded-div-text {
+	color: hsla(27, 98%, 52%, 1);
+	align-self: center;
+	margin: auto;
 }
 
 .submit:hover {
