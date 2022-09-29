@@ -27,7 +27,8 @@ const setActiveBtn = (e) => {
 const submitClickHandler = () => {
 	let activeRatingBtn = document.getElementsByClassName('active');
 	let submittedRatingValue = activeRatingBtn[0].innerHTML;
-	console.log('submit btn clicked!', submittedRatingValue);
+	let submittedRatingDisplay = document.getElementById('submitted-rating');
+	submittedRatingDisplay.textContent = submittedRatingValue;
 };
 
 submitBtn[0].addEventListener('click', submitClickHandler);
