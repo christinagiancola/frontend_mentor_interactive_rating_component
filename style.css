@@ -1,5 +1,5 @@
 * {
-	/* outline: 1px solid orange; */
+	outline: 1px solid orange;
 }
 
 body {
@@ -22,6 +22,16 @@ p {
 button {
 	border: hsl(216, 12%, 8%);
 	color: hsl(217, 12%, 63%, 75%);
+}
+
+#thank-you-card {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.center-text {
+	text-align: center;
 }
 
 .main {
