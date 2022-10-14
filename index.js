@@ -1,5 +1,6 @@
 const ratings = document.querySelectorAll('.rating-btn');
 const submitBtn = document.querySelectorAll('.submit-btn');
+const cardContainers = document.querySelectorAll('.card-container');
 
 const ratingClickHandler = (e) => {
 	resetBtns();
@@ -24,7 +25,17 @@ const setActiveBtn = (e) => {
 	e.target.classList.add('active');
 };
 
+const toggleCardVisibility = () => {
+	cardContainers.forEach((card) => {
+		if (card.classList.contains('hidden-card')) {
+			card.classList.remove('hidden-card');
+		} else {
+			card.classList.add('hidden-card');
+		}
+	});
+};
 const submitClickHandler = () => {
+	toggleCardVisibility();
 	let activeRatingBtn = document.getElementsByClassName('active');
 	let submittedRatingValue = activeRatingBtn[0].innerHTML;
 	let submittedRatingDisplay = document.getElementById('submitted-rating');

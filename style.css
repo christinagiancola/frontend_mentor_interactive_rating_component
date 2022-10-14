@@ -30,6 +30,10 @@ button {
 	align-items: center;
 }
 
+.text-block {
+	padding-top: 15px;
+}
+
 .center-text {
 	text-align: center;
 }
@@ -77,9 +81,13 @@ button {
 	background-color: #262f38;
 }
 
-.active {
+.active-rating {
 	color: hsl(0, 0%, 100%, 90%);
 	background-color: hsl(217, 12%, 63%);
+}
+
+.hidden-card {
+	display: none !important;
 }
 
 .submit-btn {
